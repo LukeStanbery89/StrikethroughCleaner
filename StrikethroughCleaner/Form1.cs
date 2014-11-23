@@ -42,36 +42,44 @@ namespace StrikethroughCleaner {
 
                 for(int rCnt = 1; rCnt <= range.Rows.Count; rCnt++) {
                     for(int cCnt = 1; cCnt <= range.Columns.Count; cCnt++) {
-                        string s = "";
-                        int char_index = 1;
-                        int length = range.Cells.Value2.ToString().Length;
+                        toolStripStatusLabel.Text = "Cleaning cell: " + rCnt.ToString() + ", " + cCnt.ToString();
+                        Range currentCell = range.Cells[rCnt, cCnt];
+                        string cleanString = "";
 
-                        while(char_index < length) {
-                            //just keep building the string with any char that is not strikethrough               
-                            if(!(bool)range.Cells.get_Characters(char_index, 1).Font.Strikethrough) {
-                                s += range.Cells.get_Characters(char_index, 1).Text;
+                        for(int pos = 0; pos < currentCell.ToString().Length; pos++) {
+                            if(!(bool)currentCell.Characters[pos, 1].Font.Strikethrough) {
+                                cleanString += currentCell.Characters[pos, 1];
+                                worksheet.Cells[rCnt,cCnt] = cleanString;
                             }
-                            char_index++;
                         }
                     }
                 }
             }
 
             using(SaveFileDialog saveDialog = new SaveFileDialog()) {
-                saveDialog.Filter = "Excel Workbook (*.xls)|*.xls";
+                saveDialog.Filter = "Excel Workbook (*.xlsx)|*.xlsx";
                 DialogResult saveResult = saveDialog.ShowDialog();
                 if(saveResult == DialogResult.OK) {
                     fileLocation = saveDialog.FileName;
                     workbook.SaveAs(fileLocation);
                 }
-            }
-        }
 
-        ~Form1() {
-            if(app != null) {
                 if(workbook != null) {
                     workbook.Close();
                 }
+                if(app != null) {
+                    app.Quit();
+                }
+            }
+
+            GC.Collect();
+        }
+
+        ~Form1() {
+            if(workbook != null) {
+                workbook.Close();
+            }
+            if(app != null) {
                 app.Quit();
             }
         }

@@ -27,6 +27,9 @@
             this.textBoxFileLocation = new System.Windows.Forms.TextBox();
             this.buttonSelectExcelWorksheet = new System.Windows.Forms.Button();
             this.buttonClean = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxFileLocation
@@ -65,11 +68,28 @@
             this.buttonClean.UseVisualStyleBackColor = true;
             this.buttonClean.Click += new System.EventHandler(this.buttonClean_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 130);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(418, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Ready";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 129);
+            this.ClientSize = new System.Drawing.Size(418, 152);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.buttonClean);
             this.Controls.Add(this.buttonSelectExcelWorksheet);
             this.Controls.Add(this.textBoxFileLocation);
@@ -79,6 +99,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Strikethrough Cleaner";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +111,8 @@
         private System.Windows.Forms.TextBox textBoxFileLocation;
         private System.Windows.Forms.Button buttonSelectExcelWorksheet;
         private System.Windows.Forms.Button buttonClean;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
     }
 }
 
