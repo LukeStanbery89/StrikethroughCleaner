@@ -1,1 +1,10 @@
 C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\bin\Debug\StrikethroughCleaner.exe.config
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\bin\Debug\StrikethroughCleaner.exe
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\bin\Debug\StrikethroughCleaner.pdb
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.csprojResolveAssemblyReference.cache
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.Form1.resources
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.Properties.Resources.resources
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.csproj.GenerateResource.Cache
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.exe
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.pdb
+C:\Users\Luke\Documents\Visual Studio 2013\Projects\StrikethroughCleaner\StrikethroughCleaner\obj\Debug\StrikethroughCleaner.csproj.ResolveComReference.cache
